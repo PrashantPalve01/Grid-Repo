@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 100px);
+        gap: 10px;
+    }
+
+    .container > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+    }
+
+    .item1 {
+        background-color: #FF5733; 
+    }
+    .item2 {
+        background-color: #33FF57; 
+    }
+    .item3 {
+        background-color: #3357FF; 
+    }
+    .item4 {
+        background-color: #FF33A6; 
+    }
+    .item5 {
+        background-color: #FFC300; 
+    }
+    .item6 {
+        background-color: #658627; 
+    }
+    .item7 {
+        background-color: #C70039; 
+    }
+    .item8 {
+        background-color: #581845; 
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+        <div class="item4">Item 4</div>
+        <div class="item5">Item 5</div>
+        <div class="item6">Item 6</div>
+        <div class="item7">Item 7</div>
+        <div class="item8">Item 8</div>
+    </div>
+</body>
+</html>
